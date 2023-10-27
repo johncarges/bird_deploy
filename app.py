@@ -6,6 +6,8 @@ from flask_restful import Api, Resource
 
 from models import db, Bird
 
+#postgresql://johncarges:bEXb5YvlvjTpTcdVmHWAaTqrCnj8vnWh@dpg-cktt94oegfnc73can3d0-a.ohio-postgres.render.com/bird_app_7w6m
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
